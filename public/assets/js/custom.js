@@ -174,15 +174,9 @@
             clickable: true,
           },
           breakpoints: {
-            280: {
-              slidesPerView: 1,
-            },
-            386: {
-              slidesPerView: 1,
-            },
-            576: {
-              slidesPerView: 2,
-            },
+            280: { slidesPerView: 1 },
+            386: { slidesPerView: 1 },
+            576: { slidesPerView: 2 },
             768: {
               slidesPerView: 3,
               spaceBetween: 15,
@@ -191,12 +185,8 @@
               slidesPerView: 4,
               spaceBetween: 15,
             },
-            1200: {
-              slidesPerView: 4,
-            },
-            1400: {
-              slidesPerView: 4,
-            },
+            1200: { slidesPerView: 4 },
+            1400: { slidesPerView: 4 },
           },
         });
       }, 0);
@@ -277,6 +267,45 @@
       },
       1400: {
         slidesPerView: 5,
+      },
+    },
+  });
+
+  var swiper = new Swiper(".home1-trip-slider-package", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
       },
     },
   });
@@ -1536,9 +1565,9 @@
   });
 
   // niceSelect
-  if ($("select").length) {
-    $("select").niceSelect();
-  }
+  // if ($("select").length) {
+  //   $("select").niceSelect();
+  // }
 
   // Language Btn
   $(".language-btn, .search-btn, .login-btn").on("click", function (e) {

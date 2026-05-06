@@ -1,9 +1,52 @@
 import React from 'react'
+import SwiperWrapperTopTrending from './swiper/SwiperWrapperTopTrending'
 
 function TopTrending() {
+    const trendingPackages = [
+        {
+            "id": 1,
+            "title": "Europe",
+            "detailsLink": "travel-package-details.html",
+            "images": "assets/img/home2/tour-package-img1.jpg",
+            "badge": "Sale on!",
+            "hasNestedSlider": false
+        },
+        {
+            "id": 2,
+            "title": "Andaman",
+            "detailsLink": "travel-package-details.html",
+            "images": "assets/img/home1/tour-package-img2.jpg",
+            "badge": "Hot Sale!",
+            "hasNestedSlider": true
+        },
+        {
+            "id": 3,
+            "title": "Bali",
+            "detailsLink": "travel-package-details.html",
+            "images": "assets/img/home2/tour-package-img2.jpg",
+            "badge": null,
+            "hasNestedSlider": false
+        },
+        {
+            "id": 4,
+            "title": "Kerala",
+            "detailsLink": "travel-package-details.html",
+            "images": "assets/img/home1/tour-package-img6.jpg",
+            "badge": "Hot Sale!",
+            "hasNestedSlider": false
+        },
+        {
+            "id": 5,
+            "title": "Thiland",
+            "detailsLink": "travel-package-details.html",
+            "images": "assets/img/home1/tour-package-img4.jpg",
+            "badge": null,
+            "hasNestedSlider": false
+        }
+    ]
     return (
         <>
-            <div className="home2-package-slider-section mb-100 pt-5 m-0 mt-3" style={{top: '100px'}}>
+            <div className="home2-package-slider-section mb-100 pt-5 m-0 mt-3" style={{ top: '100px' }}>
                 <div className="container">
                     <div className="row justify-content-start mb-30 wow animate fadeInDown" data-wow-delay="200ms"
                         data-wow-duration="1500ms">
@@ -16,83 +59,7 @@ function TopTrending() {
                     </div>
                     <div className="row mb-40">
                         <div className="col-lg-12">
-                            <div className="swiper home1-trip-slider">
-                                <div className="swiper-wrapper">
-                                    <div className="swiper-slide">
-                                        <div className="package-card">
-                                            <div className="package-img-wrap">
-                                                <a href="travel-package-details.html" className="package-img">
-                                                    <img src="assets/img/home2/tour-package-img1.jpg" alt=""/>
-                                                </a>
-                                                <div className="batch">
-                                                    <span>Sale on!</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                        <div className="package-card">
-                                            <div className="package-img-wrap">
-                                                <div className="swiper package-card-img-slider">
-                                                    <div className="swiper-wrapper">
-                                                        <div className="swiper-slide">
-                                                            <a href="travel-package-details.html" className="package-img">
-                                                                <img src="assets/img/home1/tour-package-img2.jpg" alt=""/>
-                                                            </a>
-                                                        </div>
-                                                        <div className="swiper-slide">
-                                                            <a href="travel-package-details.html" className="package-img">
-                                                                <img src="assets/img/home1/tour-package-img10.jpg" alt=""/>
-                                                            </a>
-                                                        </div>
-                                                        <div className="swiper-slide">
-                                                            <a href="travel-package-details.html" className="package-img">
-                                                                <img src="assets/img/home1/tour-package-img11.jpg" alt=""/>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="slider-pagi-wrap">
-                                                    <div className="package-card-img-pagi paginations"></div>
-                                                </div>
-                                                <div className="batch">
-                                                    <span>Hot Sale!</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                        <div className="package-card">
-                                            <div className="package-img-wrap">
-                                                <a href="travel-package-details.html" className="package-img">
-                                                    <img src="assets/img/home2/tour-package-img2.jpg" alt=""/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                        <div className="package-card">
-                                            <div className="package-img-wrap">
-                                                <a href="travel-package-details.html" className="package-img">
-                                                    <img src="assets/img/home1/tour-package-img6.jpg" alt=""/>
-                                                </a>
-                                                <div className="batch">
-                                                    <span>Hot Sale!</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                        <div className="package-card">
-                                            <div className="package-img-wrap">
-                                                <a href="travel-package-details.html" className="package-img">
-                                                    <img src="assets/img/home1/tour-package-img4.jpg" alt=""/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <SwiperWrapperTopTrending data={trendingPackages}/>
                         </div>
                     </div>
                     <div className="row">

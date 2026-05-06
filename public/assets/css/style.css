@@ -1916,6 +1916,16 @@ body.tt-magic-cursor #magic-cursor {
   background-color: var(--primary-color1);
 }
 
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: var(--primary-color1);
+}
+
+.accordion-collapse.collapse.show {
+  visibility: visible;
+}
+
 .paginations.two .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--black-color);
 }
@@ -2576,7 +2586,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .login-input-box {
   position: absolute;
-  top: 67px;
+  top: 60px;
   right: 0;
   z-index: 9999;
   width: 300px;
@@ -2590,7 +2600,7 @@ body.tt-magic-cursor #magic-cursor {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.login-input-box div:hover{
+.login-input-box div:hover {
   background: #efefef;
   border-radius: 5px;
 }
@@ -8306,6 +8316,7 @@ header.style-3.two .search-and-login .login-btn {
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 header.style-3.two .search-and-login .login-btn svg {
@@ -8315,6 +8326,18 @@ header.style-3.two .search-and-login .login-btn svg {
 
 header.style-3.two .search-and-login .login-btn:hover {
   background-color: var(--primary-color1);
+}
+
+body:has(.login-btn:hover) .login-input-box {
+  display: block;
+  transform: scaleY(1);
+  animation: fade-up2 0.5s linear;
+}
+
+.login-input-box:hover {
+  display: block;
+  transform: scaleY(1);
+  animation: fade-up2 0.5s linear;
 }
 
 header.style-3.two .main-menu>ul>li>a {
@@ -15252,6 +15275,7 @@ header.style-3.three .nav-right .primary-btn1 {
 .destination-card2 .destination-content {
   padding: 20px 10px 0;
   text-align: center;
+  z-index: 55;
 }
 
 @media (max-width: 1199px) {
@@ -15271,6 +15295,32 @@ header.style-3.three .nav-right .primary-btn1 {
   font-size: 20px;
   line-height: 1.3;
   transition: 0.5s;
+}
+
+.package-head-card .destination-card2 .destination-content h5 a {
+  color: var(--white-color);
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  transition: 0.5s;
+}
+
+.package-head-card .destination-card2 .destination-content p {
+  color: var(--white-color);
+  font-family: var(--font-poppins);
+}
+
+.package-head-card .destination-card2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.371);
+  z-index: 1;
+  border-radius: 18px;
 }
 
 .destination-card2 .destination-content h5 a:hover {
@@ -29699,7 +29749,7 @@ header.style-3.three .nav-right .primary-btn1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 130px 0;
+  padding: 15px 0;
   position: relative;
 }
 
@@ -29760,11 +29810,12 @@ header.style-3.three .nav-right .primary-btn1 {
 
 .breadcrumb-section .banner-content h1 {
   color: var(--white-color);
-  font-family: var(--font-poppins);
+  /* font-family: var(--font-poppins); */
   font-weight: 600;
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 25px;
+  font-family: 'Courgette';
 }
 
 @media (max-width: 991px) {
@@ -36258,7 +36309,7 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .destination-dt-travel-season-section .travel-season-card {
-  padding: 30px;
+  padding: 10px;
   border: 1px solid var(--borders-color);
   border-radius: 20px;
 }
@@ -36307,14 +36358,14 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .destination-dt-travel-season-section .travel-season-card .travel-season-top-area .travel-season-img img {
-  max-width: 194px;
-  min-width: 194px;
+  max-width: 150px;
+  min-width: 150px;
   width: 100%;
   border-radius: 10px;
 }
 
 .destination-dt-travel-season-section .travel-season-card .travel-season-top-area .travel-season-content h5 {
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .destination-dt-travel-season-section .travel-season-card .travel-season-top-area .travel-season-content span {
@@ -40796,7 +40847,7 @@ header.style-3.three .nav-right .primary-btn1 {
 
 .hotel-card .hotel-img-wrap .hotel-img img {
   border-radius: 10px;
-  min-height: 200px;
+  min-height: 145px;
   -o-object-fit: cover;
   object-fit: cover;
   transition: all 0.5s ease-out;
@@ -41012,14 +41063,13 @@ header.style-3.three .nav-right .primary-btn1 {
 .hotel-card .hotel-content .hotel-feature-list {
   margin: 0;
   list-style: none;
-  padding: 15px 20px;
+  padding: 10px 10px;
   background-color: #F0F0F0;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  row-gap: 18px;
+  gap: 10px;
   margin-bottom: 15px;
 }
 

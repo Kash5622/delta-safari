@@ -1,6 +1,10 @@
+"use client"
+import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 import React from 'react'
 
 function Header() {
+  const pathname = usePathname();
   return (
     <>
       <div id="magic-cursor">
@@ -21,68 +25,68 @@ function Header() {
       <header className="header-area style-2">
         <div className="container-fluid d-flex flex-nowrap align-items-center justify-content-between">
           <div className="logo-and-menu-area">
-            <a href="index.html" className="header-logo">
+            <Link href="/" className="header-logo">
               <img src="assets/img/logo_DS.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="main-menu">
             <div className="mobile-logo-area d-xl-none d-flex align-items-center justify-content-between">
-              <a href="index.html" className="mobile-logo-wrap">
+              <Link href="/" className="mobile-logo-wrap">
                 <img src="assets/img/logo_DS.png" alt="" />
-              </a>
+              </Link>
               <div className="menu-close-btn">
                 <i className="bi bi-x"></i>
               </div>
             </div>
             <ul className="menu-list">
-              <li className="active">
-                <a href="index.html">
+              <li className={pathname == "/" ? "active": ''}>
+                <Link href="/">
                   <i className="fa-regular fa-house"></i>
                   <span>
                     Home
                   </span>
-                </a>
+                </Link>
               </li>
-              <li className="menu-item-has-children">
-                <a href="travel-package-01.html" className="drop-down">
+              <li className={pathname == "/package" ? "active": ''}>
+                <Link href="/package" >
                   <i className="fa-solid fa-suitcase-rolling"></i>
                   Package
-                </a>
+                </Link>
               </li>
-              <li className="menu-item-has-children position-inherit">
-                <a href="destination-01.html" className="drop-down">
+              <li className={pathname == "/corporate" ? "active": ''}>
+                <Link href="/corporate" >
                   <i className="fa-solid fa-clipboard-user"></i>
                   <span>
                     Corporate
                   </span>
-                </a>
+                </Link>
               </li>
-              <li className="menu-item-has-children">
-                <a href="travel-package-01.html" className="drop-down">
+              <li className={pathname == "/hotel" ? "active": ''}>
+                <Link href="/hotel" >
                   <i className="fa-solid fa-hotel"></i>
                   Hotel
-                </a>
+                </Link>
               </li>
-              <li className="menu-item-has-children">
-                <a href="travel-package-01.html" className="drop-down">
+              <li className={pathname == "/cab" ? "active": ''}>
+                <Link href="/cab" >
                   <i className="fa-solid fa-taxi"></i>
                   Cab's
-                </a>
+                </Link>
               </li>
-              <li className="menu-item-has-children">
-                <a href="travel-package-01.html" className="drop-down">
+              <li className={pathname == "/referal" ? "active": ''}>
+                <Link href="/referal" >
                   <i className="fa-regular fa-handshake"></i>
                   Referal
-                </a>
+                </Link>
               </li>
-              <li className="menu-item-has-children">
-                <a href="travel-package-01.html" className="drop-down">
+              <li className={pathname == "/contact" ? "active": ''}>
+                <Link href="/contact" >
                   <i className="fa-solid fa-headset"></i>
                   Contacts
-                </a>
+                </Link>
               </li>
             </ul>
-            <a href="#" className="primary-btn1 login-btn black-bg d-xl-none d-flex">
+            <a className="primary-btn1 login-btn black-bg d-xl-none d-flex">
               <span>
                 <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -104,7 +108,7 @@ function Header() {
             </a>
           </div>
           <div className="nav-right">
-            <a href="#" className="primary-btn1 login-btn black-bg d-xl-flex d-none">
+            <a  className="primary-btn1 login-btn black-bg d-xl-flex d-none">
               <span>
                 <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
                   <g>

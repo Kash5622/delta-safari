@@ -1,0 +1,17 @@
+function HiddenGemsCard({pkg}) {
+    return (
+        <>
+            <div className="destination-card2 five">
+                <a href="destination-details.html" className="destination-img">
+                    <img src={pkg?.image} alt={pkg?.title} />
+                </a>
+                <div className="destination-content">
+                    <h5><a href="destination-details.html">{pkg?.title}</a></h5>
+                    <span>Starting From {pkg?.currency}{pkg?.price}</span>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default HiddenGemsCard
