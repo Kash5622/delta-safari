@@ -12687,9 +12687,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .blog-card:hover .blog-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .home1-blog-section .blog-slider-area {
@@ -15356,9 +15356,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .destination-card2:hover .destination-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .destination-card2.two .destination-img {
@@ -16824,9 +16824,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .blog-card2:hover .blog-img-wrap .blog-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .blog-card2.two .location {
@@ -19226,9 +19226,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .tour-guide-card:hover .guide-img-wrap .guide-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .tour-guide-card:hover .guide-img-wrap .social-list {
@@ -32782,9 +32782,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .location-card:hover .location-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .location-card:hover .location-img .img-album-btn {
@@ -37509,9 +37509,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .product-card:hover .product-card-img-wrap .product-card-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .product-card:hover .product-card-img-wrap .cart-btn {
@@ -41219,9 +41219,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .hotel-card:hover .hotel-img-wrap .hotel-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .hotel-card:hover .hotel-img-wrap .slider-btn-grp .slider-btn {
@@ -44354,9 +44354,9 @@ header.style-3.three .nav-right .primary-btn1 {
 }
 
 .home9-travel-package-section .package-card2:hover .package-img-wrap .package-img::after {
-  height: 250%;
+  /* height: 250%;
   transition: all 600ms linear;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .home9-travel-package-section .package-card2:hover .package-img-wrap .img-one {
