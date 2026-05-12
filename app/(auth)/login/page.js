@@ -13,14 +13,12 @@ function login() {
   const searchParams = useParams ();
 
   function submitLogin() {
-    const params = new URLSearchParams(searchParams.toString());
     if (!phoneValidation(phoneNumber)) {
       showMessage("error", "Please enter a valid phone number!");
       setError("Please enter a valid phone number!");
       return;
     }
-    params.set("phone", phoneNumber);
-    route.push(`/otpvalidation?${params.toString()}`);
+    route.push(`/otpvalidation?phone=${phoneNumber}`);
   }
 
   return (

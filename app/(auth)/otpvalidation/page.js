@@ -1,5 +1,5 @@
 "use client"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter, useParams  } from "next/navigation"
 import { useEffect, useState } from "react";
 import "../auth.css";
 import OTPInput from "react-otp-input";
@@ -8,8 +8,9 @@ function page() {
     const [error, setError] = useState(null);
     const [otp, setOtp] = useState('');
     const [resend, setResend] = useState(true);
-    const searchParams = useSearchParams();
-    const phone = searchParams.get('phone');
+    const searchParams = useParams();
+    console.log(searchParams)
+    const phone = '7845129636';
     const route = useRouter();
     useEffect(() => {
         if (!phone) {
